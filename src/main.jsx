@@ -1,0 +1,22 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './index.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import AddProduct from './Pages/AddProduct'
+import ProductList from './Pages/ProductList'
+
+const router = createBrowserRouter([
+  { path: '/', element: <ProductList /> },
+
+  {
+    path: 'add-product',
+    element: <AddProduct />,
+  },
+])
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+)

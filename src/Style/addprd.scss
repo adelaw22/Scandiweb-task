@@ -1,0 +1,18 @@
+#product_form {
+  // padding-bottom: 70px;
+  width: 40%;
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    .form-control {
+      width: 80%;
+    }
+  }
+  .form-label {
+    align-self: center;
+  }
+  .form-select {
+    width: 40%;
+    margin-left: 8px;
+  }
+}
